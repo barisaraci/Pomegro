@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/background_gray_selector" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageViewAvatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:border_width="2dp"
+            app:border_color="@color/colorAccent"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/circularImageViewAvatar"
+            android:layout_toEndOf="@+id/circularImageViewAvatar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="13dp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:text="Barış Aracı" />
+
+        <TextView
+            android:id="@+id/textViewAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_toRightOf="@+id/textViewName"
+            android:layout_toEndOf="@+id/textViewName"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:maxLines="1"
+            android:textColor="@color/colorGray"
+            android:text="created a new event" />
+
+        <TextView
+            android:id="@+id/textViewTimePassed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorGray"
+            android:text="17m" />
+
+        <TextView
+            android:id="@+id/textViewTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignLeft="@+id/textViewName"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorClaret"
+            android:text="Ozyegin University Lol Party" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_red_selector" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutImages"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/networkImageView1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/networkImageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/networkImageView3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/networkImageView4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/networkImageView5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/networkImageView6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:textColor="@color/colorRed"
+            android:text="Özyeğin Üniversitesi, Çekmeköy Kampüsü" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textViewLocation"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorRed"
+            android:text="21.08.2015 - 21:00" />
+
+        <TextView
+            android:id="@+id/textViewLeftTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_toRightOf="@id/textViewTime"
+            android:layout_toEndOf="@id/textViewTime"
+            android:layout_below="@id/textViewLocation"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:textColor="@color/colorGray"
+            android:text="(4 saat 6 dakika içinde)" />
+
+        <TextView
+            android:id="@+id/textViewInterests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@id/textViewTime"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorClaret"
+            android:text="#gaming #lol #party" />
+
+        <TextView
+            android:id="@+id/textViewParticipantNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/textViewInterests"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorRed"
+            android:text="112 / 256" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewInterests"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:text="Şampiyonların çarpıştığı, baron fightlarının birbirinden heyecanlı geçtiği diamond çerçevelilerin partisine herkesi bekliyoruz!" />
+
+        <Button
+            android:id="@+id/buttonRt"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/textViewContent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rtbutton_selector" />
+
+        <Button
+            android:id="@+id/buttonStar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/textViewContent"
+            android:layout_toRightOf="@id/buttonRt"
+            android:layout_toEndOf="@id/buttonRt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/starbutton_selector" />
+
+        <TextView
+            android:id="@+id/textViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/buttonRt"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50sp"
+            android:textColor="@color/colorRed"
+            android:text="..." />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

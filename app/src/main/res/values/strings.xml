@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Pomegro</string>
+
+    <string name="title_activity_main"> Pomegro </string>
+
+
+    <string name="title_activity_signin"> Pomegro </string>
+    <string name="title_activity_signup"> Pomegro </string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="passworda">Password Again</string>
+    <string name="mail">E-mail</string>
+    <string name="signin"> Sign in </string>
+    <string name="signup"> Sign up </string>
+    <string name="rememberme"> remember me </string>
+    <string name="forgotpassword"> forgot password </string>
+
+    <string name="siresult1">The username or password is incorrect.</string>
+    <string name="siresult2">You have signed in successfully.</string>
+    <string name="siresult3">There is a problem connecting to server. Please try again later.</string>
+    <string name="siresult4">You have signed out successfully.</string>
+
+    <string name="progDialog1">Please wait</string>
+    <string name="progDialog2">Signing in</string>
+    <string name="progDialog3">Signing up</string>
+    <string name="progDialog4">Loading events</string>
+
+    <string name="suresult1">Please enter your username.</string>
+    <string name="suresult2">Please enter your password.</string>
+    <string name="suresult3">Please enter your password again.</string>
+    <string name="suresult4">Please enter a valid email.</string>
+    <string name="suresult5">Please pick a username between 4 to 20 characters.</string>
+    <string name="suresult6">Please pick a username without special characters.</string>
+    <string name="suresult7">Please enter a valid email address.</string>
+    <string name="suresult8">Your password must be at least 6 characters.</string>
+    <string name="suresult9">Please pick a password without special characters.</string>
+    <string name="suresult10">Passwords do not match.</string>
+    <string name="suresult11">This username is already taken.</string>
+    <string name="suresult12">This e-mail address is already taken.</string>
+    <string name="suresult13">Password must contain at least one character and one digit.</string>
+    <string name="suresult14">Success.</string>
+
+    <string name="title_activity_newsfeed"> Pomegro </string>
+
+    <string name="nfNewsfeed"> Newsfeed </string>
+    <string name="nfExplore"> Explore </string>
+
+    <string name="noNewEvent">There are not any new event.</string>
+
+    <string name="timeMinute">m</string>
+    <string name="timeHour">h</string>
+    <string name="timeDay">d</string>
+    <string name="timeWeek">w</string>
+    <string name="timeLeft">left</string>
+
+    <string name="actionType1"> created an event </string>
+    <string name="actionType2"> will join </string>
+    <string name="actionType3"> has suggested </string>
+
+    <string name="ownerName"> Created by </string>
+
+    <string name="action_logout"> Log out </string>
+    <string name="action_settings"> Log out </string>
+    <string name="title_activity_image_details">ImageDetailsActivity</string>
+
+    <string name="eventCreating">Please wait while we are creating your amazing event</string>
+    <string name="lackingData">You have to fill everything</string>
+    <string name="eventCreated">Your event has been created successfully</string>
+    <string name="eventNotCreated">Your event could not be created</string>
+    <string name="eventLongProgress">We are working on it, keep waiting</string>
+
+    <string-array name="interests_array">
+        <item>Choose Interest</item>
+        <item>Sport</item>
+        <item>Education</item>
+        <item>Party</item>
+        <item>Business</item>
+        <item>Video Games</item>
+        <item>Health</item>
+        <item>Shopping</item>
+        <item>Food</item>
+    </string-array>
+
+
+</resources>

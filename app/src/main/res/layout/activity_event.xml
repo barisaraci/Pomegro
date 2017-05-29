@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".event.EventActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:id="@+id/carouselLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/eventimage"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/transparent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/viewLine"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorClaret"/>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutFirst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/background_black_selector">
+
+                            <TextView
+                                android:id="@+id/textViewTopic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginStart="25dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:text="Özyeğin Lol Fight Club Party" />
+
+                            <TextView
+                                android:id="@+id/textViewAction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/textViewTopic"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginStart="25dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorWhite"
+                                android:maxLines="1"
+                                android:text="@string/ownerName" />
+
+                            <TextView
+                                android:id="@+id/textViewName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/textViewAction"
+                                android:layout_toEndOf="@id/textViewAction"
+                                android:layout_below="@id/textViewTopic"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:text="Barış Aracı" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    
+                    <RelativeLayout
+                        android:id="@+id/layoutSecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorClaret">
+
+                        <ImageView
+                            android:id="@+id/imageViewLocation"
+                            android:layout_width="14dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/location" />
+
+                        <TextView
+                            android:id="@+id/textViewLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@id/imageViewLocation"
+                            android:layout_toEndOf="@id/imageViewLocation"
+                            android:maxLines="1"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorWhite"
+                            android:text="Özyeğin Üniversitesi, Çekmeköy Kampüsü" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDate"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_below="@id/imageViewLocation"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/date" />
+
+                        <TextView
+                            android:id="@+id/textViewTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/imageViewDate"
+                            android:layout_toEndOf="@id/imageViewDate"
+                            android:layout_below="@id/imageViewLocation"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:maxLines="1"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorWhite"
+                            android:text="21/08/2015 21:00" />
+
+                        <TextView
+                            android:id="@+id/textViewLeftTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/textViewTime"
+                            android:layout_below="@id/imageViewLocation"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:maxLines="1"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorWhite"
+                            android:text="(4s 6dk içinde)" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:textColor="@color/colorWhite"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    style="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse"
+                    android:maxLines="2" />
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.pomegro.android.entrance.SigninActivity"
+        tools:showIn="@layout/activity_signin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:paddingBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite" >
+
+                <TextView
+                    android:id="@+id/textViewInterests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorClaret"
+                    android:text="#gaming #lol #party" />
+
+                <TextView
+                    android:id="@+id/textViewParticipantNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textViewInterests"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorRed"
+                    android:text="112 / 256" />
+
+                <TextView
+                    android:id="@+id/textViewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/textViewInterests"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:text="Şampiyonların çarpıştığı, baron fightlarının birbirinden heyecanlı geçtiği diamond çerçevelilerin partisine herkesi bekliyoruz!" />
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollViewImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewContent"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/background_red_selector" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutImages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:orientation="horizontal">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/networkImageView1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/networkImageView2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/networkImageView3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/networkImageView4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/networkImageView5"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/networkImageView6"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/buttonRt"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/scrollViewImages"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/rtbutton_selector" />
+
+                <Button
+                    android:id="@+id/buttonStar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/scrollViewImages"
+                    android:layout_toRightOf="@id/buttonRt"
+                    android:layout_toEndOf="@id/buttonRt"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/starbutton_selector" />
+
+                <Button
+                    android:id="@+id/buttonSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@id/buttonRt"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_selector"
+                    android:text="JOIN EVENT" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:background="@color/colorWhite" >
+
+                <TextView
+                    android:id="@+id/textViewInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorClaret"
+                    android:textStyle="bold"
+                    android:text="Event Information" />
+
+                <TextView
+                    android:id="@+id/textViewInfContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="- Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n- Quisque cursus quam vel lectus commodo, efficitur commodo ex molestie.\r\n- Nulla et sem et libero imperdiet tincidunt.\r\n- Mauris vestibulum felis ut elit consequat, at lobortis enim porta.\r\n- Nullam tristique erat ac ipsum pellentesque, consectetur pellentesque lacus suscipit. Sed ut tellus nec nisl sollicitudin finibus." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_rotate" />-->
+
+</android.support.design.widget.CoordinatorLayout>

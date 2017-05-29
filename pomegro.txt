@@ -1,0 +1,122 @@
+﻿-mat hesaplarını falan da constructorda yap binding kısmında her şey hazır olsun
+-filterdan sonra resimler bozuluo bu urller falan en başta constructorda belirlensin handlerda direk kendi şeyinden çek
+-bi yerden çıakrken hep request queue stop desin geri butonuna basınca veya back diyince falan gerçi back diyince oto yapıo olabilir kontrol et
+-çıkış yapmadan farklı bi şeyle girsen dahi digerine girio giriş yaprken isregistered a bakıo mu onu kontrol et
+-event oluşturmada geri ok ekle
+-newsfeed çok geç açılıo bana her şeyi vermesin
+-tek yollanabilcekleri tek yolla
+-signinleri login yap
+-jsonlardaki başlıkları silip dene
+-uzantısını değiştrimio dimi berk .jpeg oluo zaten kaydedince
+-verilere min sınırı getir ve hinte yaz
+-stringleri düzenle tüm boşlukları sil
+-yeni etkinlik yaratırken ekranı çevirince bozuluyor
+-detailsda owner name ve data da alsın newsfeedde çıkar onları 
+-her şeye maxline = 1 ekle / camera entegresi ekle
+-event owner name / newsfeed keşfete dönünce toolbardaki diğer iconlar gözükmesin / 
+-volleyi düzenle byte ekran boyutuna göre alsın
+-newsfeeddeki resimler 100x100 olsun 
+-satır atlýyo mu onu test et
+-activityler transiction olsun
+-çok kasarsa onclick metodunu degistir
+-ayrýntýlardaki bg leri de nf ile ayný yapmayý dene
+-helvetica var mý bi bak varsa direk kullan
+-zaman þeyini güncel yap her defasýnda tekrar al ve profilleri cacheleme zamaný javayla al berkle test et
+-berk phpde türkiye saatini mi alýyor
+-fontu deðiþ
+-yazýlarý küçült
+
+setenable yapýnca mý setvisible yapýnca mý alttaki element yukarý cýkýo fragmentta dene
+etkinlik bittiyse -1 yollasýn
+etkinlik katýlýmcý sayýsý -1 derse sýnýrsýz olcak
+herkese açýk/katýlýmcýlara açýk/davet usülü
+trend etkinlik
+
+en aþaðý inince refreshing snackbarý çýksýn fragmentler animasyonlu olsun
+30 saniyede bir servera yeni etkinlik var mý diye sorsun(tarihi yollasýn o tarihden (timer)
+daha yeni tarihli item varsa yeni etkinlk var sayfayý yenile ve action bttonu göster)
+layoutu tekrar en genel layout yap
+viewpagerýn position altýnda system message yap tekrar yaratýldýgýný test et
+snackbarlar klavyeyi kaldýrmasak da üstte çýksýn
+fragment degisince toolbarý deisgmeyi yap
+newsfeed ilk açýldýðýnda signed in succesfully desin.
+- tüm gri renkler ayný olsun tüm aktivitilerde back buttonu override et
+- tüm iconlarý if room yap ve telefonu yan çevir
+- þikayet sistemi ve multi client engelle
+- twitterda aþaðý doðru inince nasýl bir progress bar çýkýo hareket edilio mu progress bar esnasnda ona bak varsa yap aynýsýný
+- ilgi alaný olmadýðý etkinlikleri de görebilme seçeneði olsun.
+- refresh time ý direk deðiþkende tut çünkü class kapanmýyor preferences a koyma
+- bazý network islemlerini main threade al ve statik metodlarla yap iþlemleri
+- geri butonuna basýnca uygun yere yönlensin
+- yeni karakter oluþturma spamýný engelle captcha tarzý bir þeyle random soru sor
+- ilgili resimler yana doðru kaydýrma
+- etkinlik kapalý oluþturulabilsin
+
+- Giriþ ( ilk giriþte en aþaðýda log in ve sign up olacak, üst taraftaki yaklaþýk %80lik kýsým hareketli gif ) direk log in olmak için edittextler çýkmasýn yani log ine basýnca çýkýcak asýl giriþ kýsmý (twitterdaki gibi ordan bakabilirsin)
+- Kayýt
+- Profil ( profil için bu cemin yaptýðý þeyi referans alabilirsin )
+- Profil Düzenle
+- Newsfeed
+- Arkadaþlar ( bu zaten dümdüz aþaðý liste ) 
+- Etkinlik oluþtur
+
+tasarýmý yapýlmasý gereken üç ikon
+~ logo icon
+~ profil
+~ arkadaþ ekle
+
+~ release 0
+- giriþ
+- kayýt
+- kayýt olunca profil ve ilgi alanlarýný belirleyen sayfa
+- profil
+- arkadaþ listesi ve search bar
+- newsfeed
+- profildeki resme basýnca çýkan zoom fragment tekrar týklayýnca tam ekran resmi görüntüleme(zooma gerek kalmayabilir)
+- profil ayarlarý
+- etkinlik oluþturma
+- etkinlik ayrýntýlarý
+- etkinlik tamamlandý butonu
+- profildeki buttonla id yazýp arkadaþ eklenebilir veya bi kullanýcý sayfasýndayken bu kiþiyi arkadaþ ekleye basýlabilir 
+- user already exist hatasý
+- etkinlige katýlanlar eskiden yeniye ya da yeniden eskiye görünür.
+
+~ release 1
+- mail onaylama
+- þifremi unuttum
+- ayarlar
+- etkinlik ayarlarýndaki sýralama listviewle olsun
+- arkadaþ ekleme olarak deðil de takip etme olarak olsun onaylamasa da takip ettiðin kiþilerin naptýðýný görebil
+- takým veya kulüp kurma ve onun parçasý olma
+
+~ release 2
+- tutorial
+- location yerine google maps
+
+~ release 3
+- kurum yaratma sayfasý
+- en iyi kulüpler achivements vs
+
+~ release 4
+- biletler ve barkod okuma
+
+
+
+
+
+
+
+- giriþ 
+- kayýt
+- kayýt olunca profil düzenleme sayfasýný açýcak ilk olarak yukarýda "size daha doðru etkinlikler gösterebilmemiz için lütfen profilinizi düzenleyin" profil fotosu ve 
+5 tane alt alta field týklayýnca liste açýlýp ordan hobi seçme, en altta 2 buton kaydet ve geç(daha sonra düzenle)
+- newsfeed en yukardaki actionbarda search / profil / ve üç nokta (profil için bi icon lazým sadece diðerleri var)
+tablar: arkadaþlar / kampüs / dünya
+- profilde üst tarafta profilin altta katýldýðýn etkinlikler katýlacaðýn etkinlkiler / üst taraftaki action barda yeni arkadaþ ekle butonu
+- arkadaþlar sayfasý alt alta arkadaþ listesi liste öðeleri whatsappdaki gibi yuvarlak çerçevede profil isim soyisim altýnda küçük küçük katýldýðý etkinlik sayýsý falan 
+olabilir, kiþinin aktifliðini belirten þey yani daha sonra küçük achivement þeyleri de eklenir oraya
+- yeni etkinlik oluþtur sayfasý burda seçeceði ayarlar falan newsfeedde bana gönderdiðin þeyler iþte
+- bildirimler sayfasý, arkadaþ istekleri veya etkinliðine yeni birisi gelirse ya da senin katýldýðýn etkinliðe birisi katýlýrsa bunlar bildirimlerde sýralancak
+- etkinlik ayrýntýlarý sayfasý, eðer etkinliði sen oluþturduysan ekstra butonlar(arkadaþlarýný davet et, düzenle gibi)
+- newsfeedde bir olay iki þekilde öne çýkabilir bir arkadaþýn bir etkinliðe katýldýðý zaman veya etkinlik oluþturulduðu zaman 
+arkadaþýn etkinliðe katýldýðýnda gne yuavrlak çerçevede profil yanýnda katýldý <etkinlik adý> gerisi newsfeedeki gibi ayný diðer türlü de <isim> oluþturdu <etkinlik adý>, (<kulüp adý> olarak gelecek daha sonra release 3)

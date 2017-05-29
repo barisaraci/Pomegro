@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ad1010</color>
+    <color name="colorPrimaryDark">#8c1318</color>
+    <color name="colorAccent">#d90d0e</color>
+    <color name="windowBackground">#e7e7e7</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="statusBarColor">#8c1318</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#a6a4a4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#d90d0e</color>
+    <color name="colorClaret">#8e1516</color>
+    <color name="colorButtonClicked">#ca0d0e</color>
+</resources>
